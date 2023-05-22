@@ -3,6 +3,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <audio id="audio" src="./assets/Canon in D - Pachelbel (audio-extractor.net).mp3"></audio>
         <video autoplay loop muted plays-inline class="vid1">
             <source src="./assets/pexels-milan-matos-14904130-1920x1080-30fps.mp4" type="video/mp4">
         </video>
@@ -11,7 +12,7 @@
                 <img src="./assets/ICCAMS Short Brochure.jpg" alt=""></div>
             <label class="curtain-container">
               <div class="curtain-panel">
-                <input type="checkbox" class="curtain-trigger" />
+                <input type="checkbox" class="curtain-trigger" onclick="play;" />
                 <div class="left-curtain curtain" >
                     <img src="./assets/Red-Curtains-Vector-Powerpoint-Backgrounds.jpg" alt="">
                 </div>
@@ -21,6 +22,12 @@
               </div>
             </label>
           </div>
+          <script>
+            function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+              }
+          </script>
     </body>
 </html>
 <!-- data-title="Click to reveal BROCHURE" -->
